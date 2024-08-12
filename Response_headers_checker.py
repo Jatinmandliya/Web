@@ -1,7 +1,7 @@
 import requests, argparse
 
 parser = argparse.ArgumentParser(
-                    prog='Header Tester - By Jatin Mandliya',
+                    prog='python Response_headers_checker.py',
                     description='Displays missing security headers and present security headers with its values. Provide list consist list of URLs. Also provide cookie to test headers for URLs which are available after login')
 
 parser.add_argument('filename')
@@ -35,5 +35,3 @@ for url in urls.readlines():
         print(f"Non-success status code: {response.reason}")
 
 urls.close()
-
-
